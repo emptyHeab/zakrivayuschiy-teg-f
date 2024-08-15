@@ -4,3 +4,58 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+  --page-background-color: #000;
+  --title-fnt-wght: 785;
+  --text-fnt-wght: 465;
+  --main-color: #00cc14;
+  --watermark-stroke: #000;
+  --button-text-color:#00cc14;
+  --heart-contour: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+ :root{
+  --page-background-color: #000;
+  --title-fnt-wght: 785;
+  --text-fnt-wght: 465;
+  --background-image:
+  repeating-linear-gradient(to right, #000, transparent 4px),
+  repeating-linear-gradient(to bottom, #000, transparent 4px),
+  repeating-linear-gradient(to bottom, #007f0c, #004306);
+  --main-color: #00cc14;
+  --watermark-stroke: #000;
+  --button-text-color:#00cc14;
+  --heart-contour: #00cc14;
+ }
+}
+
+:root.theme-light {
+  --page-background-color: #fff;
+  --title-fnt-wght: 700;
+  --text-fnt-wght: 400;
+  --background-image:
+  repeating-linear-gradient(to right, #d3d3d3, transparent 4px),
+  repeating-linear-gradient(to bottom, #d3d3d3, transparent 4px),
+  repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  --main-color: #000;
+  --watermark-stroke: #fff;
+  --button-text-color:#fff;
+  --heart-contour: #000;
+}
+
+@media (prefers-color-scheme: light) {
+  :root{
+   --page-background-color: #fff;
+   --title-fnt-wght: 700;
+   --text-fnt-wght: 400;
+   --background-image:
+  repeating-linear-gradient(to right, #d3d3d3, transparent 4px),
+  repeating-linear-gradient(to bottom, #d3d3d3, transparent 4px),
+  repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  --main-color: #000;
+  --watermark-stroke: #fff;
+  --button-text-color:#fff;
+  --heart-contour: #000;
+  }
+ }
