@@ -19,17 +19,12 @@
   min-block-size: 100dvb;
   background-color: var(--page-background-color);
   background-image: var(--background-image);
+  font-variation-settings: 'wght' var(--text-fnt-wght), 'slnt' 0;
   background-size: cover;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: var(--main-font, sans-serif);
-  }
 }
 
 .header {
