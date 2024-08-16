@@ -70,8 +70,8 @@
 
 .button {
   cursor: pointer;
-  background-color: var(--page-background-color);
   border: none;
+  background-color: var(--page-background-color);
   font-family: var(--accent-font);
   font-size: var(--button-font-size);
   line-height: var(--button-line-height);
@@ -85,13 +85,6 @@
   text-transform: uppercase;
   font-size: inherit;
   line-height: 1;
-}
-
-.theme-menu__button:disabled::before {
-  content: "▶";
-  position: absolute;
-  inset-inline-start: -16px;
-  animation: pointer 0.5s ease-in-out infinite;
 }
 
 .main {
@@ -142,6 +135,13 @@
 .like-section {
   display: flex;
   justify-content: end;
+  align-items: center;
+}
+
+.like-icon {
+  border: 2px solid transparent;
+  height: 38px;
+  width: 38px;
 }
 
 .card__like-button {
@@ -206,10 +206,6 @@
   mix-blend-mode: difference;
 }
 
-.like-icon {
-  border: 2px solid transparent;
-}
-
 .main__dialog[open] {
   border: var(--border);
   padding: 30px;
@@ -238,6 +234,7 @@
   border: var(--border);
   height: 38px;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .floppy-icon {
