@@ -62,7 +62,7 @@
   transform: scaleX(0);
   height: 2px;
   background-color: var(--main-color);
-  transition: transform 1s;
+  transition: transform 0.3s ease;
   transform-origin: left;
 }
 
@@ -90,7 +90,7 @@
 
 .core {
   fill: transparent;
-  transition: fill 0.03s linear;
+  transition-delay: 0.03s;
 }
 
 .heart:hover .core {
@@ -110,12 +110,10 @@
 
 .heart:active .core {
   fill: var(--heart-active);
-  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-active);
-  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
@@ -129,23 +127,15 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heart 0.3s ease-in 0.1s backwards;
+  animation: heart 0.3s ease-in 0.1s alternate backwards;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s ease-in 0.3 backwards;
+  animation: sparks 0.3s ease-in 0.3 alternate backwards;
 }
 
 .contour {
   transition: fill 0.1s linear;
-}
-
-.floppy-icon {
-  width: 21px;
-  height: 21px;
-  display: block;
-  color: var(--button-text-color);
-  mix-blend-mode: difference;
 }
 
 
