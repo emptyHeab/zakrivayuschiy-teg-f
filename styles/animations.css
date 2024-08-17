@@ -150,7 +150,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s ease-in 0.3 alternate backwards;
+  animation: sparks 0.3s ease-in 0.3s alternate backwards;
 }
 
 
