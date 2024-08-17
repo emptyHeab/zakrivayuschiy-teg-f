@@ -153,10 +153,6 @@
   animation: sparks 0.3s ease-in 0.3 alternate backwards;
 }
 
-.contour {
-  transition: fill 0.1s linear;
-}
-
 
 @keyframes pointer {
   from {
