@@ -21,13 +21,16 @@
   animation: pointer 0.5s ease-in-out infinite alternate;
 }
 
+.card__icon-button {
+  transition: border 0.3s ease;
+}
+
 .card__icon-button:focus {
   outline: none;
 }
 
 .card__icon-button:focus-visible .like-icon {
   border: var(--border);
-  transition: border 0.3s ease;
 }
 
 .interface_button:focus {
@@ -109,7 +112,7 @@
 
 .main-body {
   fill: transparent;
-  transition: fill 0.3s linear  0.05s;
+  transition: fill 0.3s linear;
 }
 
 .core {
@@ -119,30 +122,37 @@
 
 .heart:hover .core {
   fill: var(--heart-contour);
+  transition-delay: 0;
 }
 
 .heart:hover .main-body {
   fill: var(--main-color);
+  transition-delay: 0.05s;
 }
 
 .heart:active .main-body {
   fill: var(--heart-active);
+  transition-delay: 0.05s;
 }
 
 .heart:active .core {
   fill: var(--heart-active);
+  transition-delay: 0;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-active);
+  transition-delay: 0;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-active);
+  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--heart-active);
+  transition: fill 0.3s ease-in 0.06s;
 }
 
 .like-icon.is-liked .heart {
